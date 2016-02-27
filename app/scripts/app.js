@@ -2,11 +2,10 @@
 
 /**
  * @ngdoc overview
- * @name numPadApp
+ * @name IonicNumPad
  * @description
- * # numPadApp
+ * # IonicNumPad
  *
  * Main module of the application.
  */
-angular
-  .module('numPadApp', []);
+angular.module('IonicNumPad', ['ionic', 'App.controllers']);

@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name numPadApp.controller:MainCtrl
+ * @name IonicNumPad.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the numPadApp
+ * Controller of the IonicNumPad
  */
-angular.module('numPadApp')
+angular.module('IonicNumPad')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

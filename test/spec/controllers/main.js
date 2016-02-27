@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('numPadApp'));
+  beforeEach(module('IonicNumPad'));
 
   var MainCtrl,
     scope;
