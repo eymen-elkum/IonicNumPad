@@ -9,11 +9,15 @@
  */
 angular.module('IonicNumPad').controller('MainCtrl', function ($scope, numPadService) {
 
+	$scope.value = 100 * Math.random().toFixed(4);
+
 	$scope.openModal = function () {
-		numPadService.open();
+		numPadService.open($scope.value).then(function (num) {
+			$scope.value = num;
+		});
 	}
 
-	numPadService.open().then(function (num) {
-		console.log(num)
+	numPadService.open($scope.value).then(function (num) {
+		$scope.value = num;
 	});
 });
