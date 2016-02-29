@@ -1,36 +1,34 @@
 <ion-modal-view class="full" >
-   <ion-content class="" >
-      <div class="full numpad-wrapper" >
-         <div class="result row" >
-            <button class="button button-icon icon ion-android-close" ng-click="closeModal()" style="position: absolute;" ></button >
-            <span class="col col-center" >{{ num }}</span >
+   <div class="pane" >
+      <div class="numpad-result" >
+         <button class="button button-icon icon ion-android-close" ng-click="closeModal()" style="position: absolute;" ></button >
+         <h4 class="text-center" >{{ num }}</h4 >
+      </div >
+      <div class="numpad-numbers" >
+         <div class="row" >
+            <button class="col button button-light" ng-click="set_num('7')" >7</button >
+            <button class="col button button-light" ng-click="set_num('8')" >8</button >
+            <button class="col button button-light" ng-click="set_num('9')" >9</button >
          </div >
-         <div class="numbers" >
-            <div class="row" >
-               <button class="col button button-light" ng-click="set_num('7')" >7</button >
-               <button class="col button button-light" ng-click="set_num('8')" >8</button >
-               <button class="col button button-light" ng-click="set_num('9')" >9</button >
-            </div >
-            <div class="row" >
-               <button class="col button button-light" ng-click="set_num('4')" >4</button >
-               <button class="col button button-light" ng-click="set_num('5')" >5</button >
-               <button class="col button button-light" ng-click="set_num('6')" >6</button >
-            </div >
-            <div class="row" >
-               <button class="col button button-light" ng-click="set_num('1')" >1</button >
-               <button class="col button button-light" ng-click="set_num('2')" >2</button >
-               <button class="col button button-light " ng-click="set_num('3')" >3</button >
-            </div >
-            <div class="row" >
-               <button class="col button button-light" ng-click="set_num('0')" >0</button >
-               <button class="col button button-light" ng-click="set_num('.')" >.</button >
-               <button class="col button button-light" ng-click="clear()" >C</button >
-            </div >
-            <div class="row" >
-               <!--icon ion-android-arrow-forward icon-right-->
-               <button class=" col button button-balanced" ng-click="finish()" >Ileri</button >
-            </div >
+         <div class="row" >
+            <button class="col button button-light" ng-click="set_num('4')" >4</button >
+            <button class="col button button-light" ng-click="set_num('5')" >5</button >
+            <button class="col button button-light" ng-click="set_num('6')" >6</button >
+         </div >
+         <div class="row" >
+            <button class="col button button-light" ng-click="set_num('1')" >1</button >
+            <button class="col button button-light" ng-click="set_num('2')" >2</button >
+            <button class="col button button-light " ng-click="set_num('3')" >3</button >
+         </div >
+         <div class="row" >
+            <button class="col button button-light" ng-click="set_num('0')" >0</button >
+            <button class="col button button-light" ng-click="set_num('.')" >.</button >
+            <button class="col button button-light" ng-click="clear()" >C</button >
+         </div >
+         <div class="row" >
+            <!--icon ion-android-arrow-forward icon-right-->
+            <button class=" col button button-balanced" ng-click="finish()" >Ileri</button >
          </div >
       </div >
-   </ion-content >
+   </div >
 </ion-modal-view >
