@@ -1,6 +1,6 @@
 /node_modules
 /dist
 /.tmp
-/.idea
+/.idea/*
 /.sass-cache
 /bower_components
