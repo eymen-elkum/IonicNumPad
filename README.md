@@ -1,12 +1,7 @@
-# num-pad
+# IonicNumpad
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
+Numpad modal service for Ionic Framework 
 
-## Build & development
+[Landing page ](http://bit.ly/INPad)
 
-Run `grunt` for building and `grunt serve` for preview.
-
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
+[Demo page ](http://bit.ly/IonicPad)
