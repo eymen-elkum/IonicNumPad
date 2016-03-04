@@ -7,7 +7,7 @@
  * # numPad/numPadService
  * Service in the IonicNumPad.
  */
-angular.module('IonicNumPad').service('numPadService', function ($ionicModal, $rootScope, $q) {
+angular.module('IonicNumPad').service('numPadService', function ($ionicModal, $rootScope, $q, numpadConfig) {
 
 	//settings
 	var deferred = $q.defer();
@@ -15,6 +15,7 @@ angular.module('IonicNumPad').service('numPadService', function ($ionicModal, $r
 	var $scope = $rootScope.$new();
 
 	//private functions
+	$scope.submitText = numpadConfig.submitText;
 	$scope.num = 1;
 	$scope.new = true;
 	$scope.closeModal = function () {
@@ -28,12 +29,10 @@ angular.module('IonicNumPad').service('numPadService', function ($ionicModal, $r
 	}
 
 	$scope.set_point = function () {
-		pr('print var');
 		$scope.point = true;
 	}
 
 	$scope.clear = function () {
-		pr('clear .....');
 		$scope.new = true;
 		$scope.num = '1';
 	}
