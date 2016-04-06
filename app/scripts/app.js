@@ -8,10 +8,10 @@
  *
  * Main module of the application.
  */
-angular.module('IonicNumPad', ['ionic', 'App.controllers']).config(function (numpadConfigProvider) {
+angular.module('IonicNumPad', ['ionic', 'App.controllers']).config(function () {
 
-	numpadConfigProvider.init({
-		submitText: 'Set Value'
-	});
+	//numpadConfigProvider.init({
+	//	submitText: 'Set Value'
+	//});
 
 });
