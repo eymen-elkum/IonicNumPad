@@ -11,8 +11,8 @@ angular.module('IonicNumPad').provider('numPad', function ($injector) {
 
 	var modal = false, q, rootScope, deferred, scope = {}, ionicModal;
 
-	//Going to set this property on the config function below
-	this.submitText = 'SET';
+	//default values
+	this.submitText = 'Submit';
 
 	var setup = function ($injector, self) {
 		//setup goes here
