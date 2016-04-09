@@ -13,6 +13,7 @@ angular.module('IonicNumPad').provider('numPad', function ($injector) {
 
 	//default values
 	this.submitText = 'Submit';
+	this.maxValue = false;
 
 	var setup = function ($injector, self) {
 		//setup goes here
@@ -49,7 +50,8 @@ angular.module('IonicNumPad').provider('numPad', function ($injector) {
 					return;
 				}
 				var newVal = parseFloat(scope.num + num);
-				if (scope.new || newVal > 100) {
+				console.log(scope.maxValue);
+				if (scope.new || (scope.maxValue && newVal > scope.maxValue)) {
 					scope.new = false;
 					if (num === '.')
 						scope.num += num;
@@ -71,9 +73,11 @@ angular.module('IonicNumPad').provider('numPad', function ($injector) {
 				setup($injector, self);
 				scope.submitText = this.submitText;
 
+				console.log(this.maxValue);
 				scope.num = defaultNum || 1;
 				scope.num = scope.num.toString();
 				scope.new = true;
+				scope.maxValue = this.maxValue;
 
 				if (modal) {
 					modal.show();
@@ -90,7 +94,8 @@ angular.module('IonicNumPad').provider('numPad', function ($injector) {
 
 				return deferred.promise;
 			},
-			submitText: this.submitText
+			submitText: this.submitText,
+			maxValue  : this.maxValue
 		}
 	}
 });
