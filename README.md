@@ -1,4 +1,4 @@
-# IonicNumpad
+# IonicNumpad [NOT SUPPORTED ANY MORE]
 
 Numpad modal service for Ionic Framework 
 
